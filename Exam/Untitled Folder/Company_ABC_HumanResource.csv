@@ -1,0 +1,301 @@
+﻿EmpID,Sex,MaritalStatus,Position,Department,Salary,RecruitmentSource,EmploymentStatus,TerminationReason,PerformanceScore,EmployerSatisfaction,Absences
+10026,M ,Single,Production Technician I,Production       ,,LinkedIn,Active,N/A-StillEmployed,Exceeds,5,1
+10084,M ,,Sr. DBA,IT/IS,104437,Indeed,Voluntarily Terminated,career change,Fully Meets,3,17
+10196,F,Married,Production Technician II,Production       ,64955,LinkedIn,Voluntarily Terminated,hours,Fully Meets,3,3
+10088,F,Married,Production Technician I,Production       ,64991,Indeed,Active,N/A-StillEmployed,Fully Meets,5,15
+10069,F,Divorced,Production Technician I,Production       ,50825,Google Search,Voluntarily Terminated,return to school,Fully Meets,4,2
+10002,F,Single,Production Technician I,Production       ,57568,LinkedIn,Active,N/A-StillEmployed,Exceeds,5,15
+10194,F,Single,Software Engineer,Software Engineering,95660,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,19
+10062,M ,Widowed,Production Technician I,Production       ,59365,Employee Referral,Active,N/A-StillEmployed,Fully Meets,4,19
+10114,F,Single,Production Technician I,Production       ,47837,Diversity Job Fair,Active,N/A-StillEmployed,Fully Meets,3,4
+10250,M ,Divorced,IT Support,IT/IS,50178,Indeed,Active,N/A-StillEmployed,Fully Meets,5,16
+10252,F,Married,Production Technician I,Production       ,54670,Diversity Job Fair,Voluntarily Terminated,Another position,Fully Meets,4,12
+10242,M ,Married,Production Technician I,Production       ,47211,Diversity Job Fair,Voluntarily Terminated,unhappy,Fully Meets,3,15
+10012,M ,,Data Analyst,IT/IS,92328,Diversity Job Fair,Active,N/A-StillEmployed,Exceeds,4,9
+10265,M ,Single,Production Technician I,Production       ,58709,Google Search,Active,N/A-StillEmployed,Fully Meets,4,7
+10066,M ,Divorced,Production Technician I,Production       ,,On-line Web application,Voluntarily Terminated,Another position,Fully Meets,5,1
+10061,M ,Single,Production Technician I,Production       ,57834,Google Search,Terminated for Cause,attendance,Fully Meets,4,20
+10023,F,Married,Production Technician II,Production       ,70131,Employee Referral,Active,N/A-StillEmployed,Exceeds,3,16
+10055,F,Single,Production Technician I,Production       ,59026,Google Search,Active,N/A-StillEmployed,Fully Meets,5,12
+10245,F,Single,Database Administrator,IT/IS,110000,Google Search,Terminated for Cause,performance,Fully Meets,4,8
+10277,M ,Single,Production Technician I,Production       ,53250,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,13
+10046,M ,Single,Production Technician I,Production       ,51044,Google Search,Active,N/A-StillEmployed,Fully Meets,3,13
+10226,F,Divorced,Production Technician I,Production       ,64919,Indeed,Active,N/A-StillEmployed,Fully Meets,3,2
+10003,F,Married,Production Technician I,Production       ,62910,Indeed,Active,N/A-StillEmployed,Exceeds,3,19
+10294,F,Single,Production Technician II,Production       ,66441,CareerBuilder,Active,N/A-StillEmployed,Needs Improvement,3,3
+10267,F,,Production Technician II,Production       ,57815,Google Search,Voluntarily Terminated,career change,Fully Meets,5,5
+10199,M ,Single,Enterprise Architect,IT/IS,103613,LinkedIn,Terminated for Cause,Learned that he is a gangster,Fully Meets,5,2
+10081,F,Married,Sr. Accountant,Admin Offices,106367,Diversity Job Fair,Active,N/A-StillEmployed,Fully Meets,4,4
+10175,M ,Single,Production Manager,Production       ,74312,Indeed,Voluntarily Terminated,retiring,Fully Meets,3,14
+10177,F,Married,Production Technician I,Production       ,53492,Google Search,Voluntarily Terminated,Another position,Fully Meets,4,6
+10238,F,Married,Accountant I,Admin Offices,63000,Diversity Job Fair,Active,N/A-StillEmployed,Fully Meets,2,14
+10184,M ,Single,Production Technician II,Production       ,,Google Search,Active,N/A-StillEmployed,Fully Meets,3,9
+10203,F,Separated,Production Technician I,Production       ,64375,Diversity Job Fair,Active,N/A-StillEmployed,Fully Meets,5,17
+10188,F,Married,Area Sales Manager,Sales,74326,Google Search,Voluntarily Terminated,Another position,Fully Meets,5,19
+10107,F,Single,Production Technician II,Production       ,63763,Employee Referral,Active,N/A-StillEmployed,Fully Meets,4,3
+10181,M ,Married,Production Technician II,Production       ,62162,Indeed,Active,N/A-StillEmployed,Fully Meets,5,15
+10150,M ,Single,Software Engineering Manager,Software Engineering,77692,Google Search,Active,N/A-StillEmployed,Fully Meets,3,4
+10001,M ,,Production Manager,Production       ,72640,Indeed,Active,N/A-StillEmployed,Exceeds,3,14
+10085,F,Single,Software Engineer,Software Engineering,93396,Indeed,Active,N/A-StillEmployed,Fully Meets,4,3
+10115,M ,Single,Production Technician I,Production       ,52846,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,14
+10082,F,Single,Sr. DBA,IT/IS,100031,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,7
+10040,F,Single,Area Sales Manager,Sales,71860,Indeed,Active,N/A-StillEmployed,Fully Meets,5,7
+10067,F,Single,Production Technician I,Production       ,61656,Google Search,Active,N/A-StillEmployed,Fully Meets,4,11
+10108,M ,Married,BI Director,IT/IS,110929,Indeed,Active,N/A-StillEmployed,Fully Meets,5,8
+10210,F,Single,Production Technician I,Production       ,54237,Indeed,Active,N/A-StillEmployed,Fully Meets,4,11
+10154,M ,Single,Production Technician I,Production       ,60380,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,4
+10200,M ,Single,Area Sales Manager,Sales,66808,Employee Referral,Active,N/A-StillEmployed,Fully Meets,5,17
+10240,F,Single,Production Technician I,Production       ,64786,Indeed,Voluntarily Terminated,relocation out of area,Fully Meets,4,3
+10168,F,Single,Production Technician I,Production       ,64816,Indeed,Active,N/A-StillEmployed,Fully Meets,5,3
+10220,M ,Single,IT Support,IT/IS,68678,Indeed,Active,N/A-StillEmployed,Fully Meets,3,2
+10275,F,Married,Production Technician II,Production       ,64066,Google Search,Voluntarily Terminated,unhappy,Fully Meets,5,9
+10269,M ,,Production Technician II,Production       ,59369,Indeed,Voluntarily Terminated,career change,Fully Meets,4,6
+10029,M ,Married,Production Technician I,Production       ,50373,Employee Referral,Active,N/A-StillEmployed,Exceeds,4,5
+10261,M ,Single,Production Technician I,Production       ,63108,Employee Referral,Active,N/A-StillEmployed,Fully Meets,5,3
+10292,M ,Single,Production Technician I,Production       ,59144,LinkedIn,Terminated for Cause,performance,Needs Improvement,3,16
+10282,M ,Divorced,Production Manager,Production       ,68051,CareerBuilder,Active,N/A-StillEmployed,Needs Improvement,2,3
+10019,M ,Single,Director of Operations,Production       ,170500,Indeed,Active,N/A-StillEmployed,Exceeds,5,15
+10094,F,Married,Production Technician I,Production       ,63381,Indeed,Active,N/A-StillEmployed,Fully Meets,5,6
+10193,M ,Married,Data Analyst,IT/IS,83552,Indeed,Active,N/A-StillEmployed,Fully Meets,3,2
+10132,F,Single,Production Technician I,Production       ,,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,15
+10083,M ,Single,Sr. Network Engineer,IT/IS,92329,Employee Referral,Active,N/A-StillEmployed,Fully Meets,3,5
+10099,F,Single,Sales Manager,Sales,65729,Indeed,Active,N/A-StillEmployed,Fully Meets,4,8
+10212,F,Married,Sr. Network Engineer,IT/IS,85028,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,19
+10056,F,Married,Production Technician I,Production       ,57583,Indeed,Active,N/A-StillEmployed,Fully Meets,3,1
+10143,M ,Single,Production Technician II,Production       ,56294,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,6
+10311,M ,Married,Production Technician I,Production       ,56991,Indeed,Active,N/A-StillEmployed,Fully Meets,4,2
+10070,M ,Married,Production Technician I,Production       ,55722,Indeed,Voluntarily Terminated,unhappy,Fully Meets,4,14
+10155,F,Single,Software Engineer,Software Engineering,101199,CareerBuilder,Active,N/A-StillEmployed,Fully Meets,5,8
+10306,M ,Single,Area Sales Manager,Sales,61568,Indeed,Active,N/A-StillEmployed,PIP,3,5
+10100,F,Separated,Production Technician II,Production       ,58275,Google Search,Voluntarily Terminated,more money,Fully Meets,5,1
+10310,M ,Married,Production Technician I,Production       ,53189,Indeed,Active,N/A-StillEmployed,PIP,2,9
+10197,M ,Single,BI Developer,IT/IS,96820,Indeed,Active,N/A-StillEmployed,Fully Meets,5,15
+10276,M ,Single,Production Technician I,Production       ,51259,Indeed,Active,N/A-StillEmployed,Fully Meets,4,1
+10304,F,,Area Sales Manager,Sales,59231,Website,Active,N/A-StillEmployed,PIP,1,17
+10284,F,Married,Production Technician I,Production       ,61584,Indeed,Active,N/A-StillEmployed,Needs Improvement,4,6
+10207,F,Single,Production Technician I,Production       ,46335,CareerBuilder,Active,N/A-StillEmployed,Fully Meets,5,15
+10133,F,Married,IT Support,IT/IS,70621,Employee Referral,Active,N/A-StillEmployed,Fully Meets,4,16
+10028,M ,Single,IT Manager - Support,IT/IS,138888,Indeed,Active,N/A-StillEmployed,Exceeds,5,4
+10006,F,Single,Area Sales Manager,Sales,74241,Indeed,Active,N/A-StillEmployed,Exceeds,5,14
+10105,F,Single,Production Manager,Production       ,75188,Google Search,Active,N/A-StillEmployed,Fully Meets,4,4
+10211,F,Married,Production Technician I,Production       ,62514,Google Search,Active,N/A-StillEmployed,Fully Meets,3,6
+10064,F,Married,Production Technician I,Production       ,60070,Google Search,Voluntarily Terminated,military,Fully Meets,3,7
+10247,M ,Single,Production Technician I,Production       ,48888,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,8
+10235,M ,Married,Production Technician I,Production       ,54285,Employee Referral,Active,N/A-StillEmployed,Fully Meets,3,3
+10299,F,Separated,Production Technician II,Production       ,56847,Indeed,Active,N/A-StillEmployed,PIP,1,5
+10280,M ,Single,Production Technician I,Production       ,60340,Google Search,Terminated for Cause,attendance,Needs Improvement,4,16
+10296,F,Single,Production Technician I,Production       ,59124,Google Search,Terminated for Cause,"no-call, no-show",Needs Improvement,3,19
+10290,F,Married,Software Engineer,Software Engineering,99280,Indeed,Terminated for Cause,attendance,Needs Improvement,5,19
+10263,F,Married,Production Technician II,Production       ,71776,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,17
+10136,F,Single,Production Technician II,Production       ,65902,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,7
+10189,F,Married,Production Technician I,Production       ,57748,Google Search,Voluntarily Terminated,military,Fully Meets,3,16
+10308,M ,Married,Production Technician I,Production       ,64057,Indeed,Active,N/A-StillEmployed,PIP,5,15
+10309,M ,Single,Network Engineer,IT/IS,53366,LinkedIn,Active,N/A-StillEmployed,PIP,3,2
+10049,F,Married,Production Technician I,Production       ,58530,Google Search,Active,N/A-StillEmployed,Fully Meets,5,19
+10093,M ,Single,Production Technician II,Production       ,72609,Google Search,Voluntarily Terminated,hours,Fully Meets,5,20
+10163,F,Married,Production Technician II,Production       ,55965,Google Search,Voluntarily Terminated,career change,Fully Meets,3,6
+10305,M ,Married,Area Sales Manager,Sales,70187,Employee Referral,Terminated for Cause,Fatal attraction,PIP,5,7
+10015,M ,Single,IT Director,IT/IS,178000,Indeed,Active,N/A-StillEmployed,Exceeds,5,15
+10080,F,Married,Sr. Accountant,Admin Offices,99351,Other,Active,N/A-StillEmployed,Fully Meets,3,3
+10258,M ,Single,Area Sales Manager,Sales,67251,CareerBuilder,Active,N/A-StillEmployed,Fully Meets,3,7
+10273,F,Single,IT Support,IT/IS,65707,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,1
+10111,M ,Single,Production Technician I,Production       ,52249,Employee Referral,Active,N/A-StillEmployed,Fully Meets,3,5
+10257,F,Single,Production Technician I,Production       ,53171,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,12
+10159,F,Married,Production Technician I,Production       ,51337,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,19
+10122,F,Divorced,Production Technician I,Production       ,51505,Diversity Job Fair,Voluntarily Terminated,hours,Fully Meets,4,2
+10142,F,Widowed,Area Sales Manager,Sales,59370,CareerBuilder,Terminated for Cause,attendance,Fully Meets,4,7
+10283,M ,Married,Production Technician I,Production       ,54933,Diversity Job Fair,Voluntarily Terminated,military,Needs Improvement,4,15
+10018,F,Single,Production Technician I,Production       ,57815,Indeed,Active,N/A-StillEmployed,Exceeds,4,3
+10255,F,Single,Area Sales Manager,Sales,61555,Indeed,Active,N/A-StillEmployed,Fully Meets,5,20
+10246,F,Single,Database Administrator,IT/IS,114800,Indeed,Terminated for Cause,"no-call, no-show",Fully Meets,4,10
+10228,M ,Married,IT Support,IT/IS,74679,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,20
+10243,F,Single,Production Technician I,Production       ,53018,Indeed,Active,N/A-StillEmployed,Fully Meets,5,7
+10031,M ,Divorced,Production Technician I,Production       ,59892,Diversity Job Fair,Active,N/A-StillEmployed,Exceeds,4,1
+10300,M ,Married,Production Technician II,Production       ,68898,Diversity Job Fair,Voluntarily Terminated,career change,PIP,3,10
+10101,F,Separated,IT Support,IT/IS,61242,Employee Referral,Active,N/A-StillEmployed,Fully Meets,4,11
+10237,F,Married,Production Technician II,Production       ,66825,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,20
+10051,M ,Married,Production Technician I,Production       ,48285,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,2
+10218,F,Separated,Production Technician II,Production       ,66149,Google Search,Active,N/A-StillEmployed,Fully Meets,5,1
+10256,F,Married,Production Technician I,Production       ,49256,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,3
+10098,M ,Divorced,Production Manager,Production       ,62957,Employee Referral,Active,N/A-StillEmployed,Fully Meets,3,2
+10059,F,Divorced,Production Technician I,Production       ,63813,CareerBuilder,Voluntarily Terminated,more money,Fully Meets,5,17
+10234,M ,Married,BI Developer,IT/IS,99020,Indeed,Active,N/A-StillEmployed,Fully Meets,5,8
+10109,M ,Single,Area Sales Manager,Sales,71707,LinkedIn,Voluntarily Terminated,relocation out of area,Fully Meets,5,20
+10125,F,Married,Production Technician I,Production       ,54828,Google Search,Active,N/A-StillEmployed,Fully Meets,4,13
+10074,M ,Single,Production Technician II,Production       ,64246,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,20
+10097,F,Single,Production Technician I,Production       ,52177,CareerBuilder,Voluntarily Terminated,retiring,Fully Meets,4,8
+10007,F,Married,Production Technician I,Production       ,62065,CareerBuilder,Active,N/A-StillEmployed,Exceeds,4,5
+10129,M ,Single,Production Technician I,Production       ,46998,Google Search,Active,N/A-StillEmployed,Fully Meets,4,1
+10075,F,Single,Production Technician II,Production       ,68099,CareerBuilder,Voluntarily Terminated,hours,Fully Meets,3,15
+10167,M ,Married,Area Sales Manager,Sales,70545,Indeed,Active,N/A-StillEmployed,Fully Meets,5,9
+10195,F,Married,Production Technician II,Production       ,63478,Indeed,Voluntarily Terminated,relocation out of area,Fully Meets,5,16
+10112,F,Single,Database Administrator,IT/IS,97999,Indeed,Active,N/A-StillEmployed,Fully Meets,5,4
+10272,F,Married,Director of Sales,Sales,180000,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,19
+10182,F,Married,Administrative Assistant,Admin Offices,49920,Indeed,Terminated for Cause,"no-call, no-show",Fully Meets,3,6
+10248,F,Single,Production Technician I,Production       ,55425,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,4
+10201,F,Single,Production Technician II,Production       ,69340,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,4
+10214,F,Separated,Production Technician II,Production       ,64995,Indeed,Active,N/A-StillEmployed,Fully Meets,3,6
+10160,F,Divorced,Production Technician II,Production       ,68182,Google Search,Voluntarily Terminated,unhappy,Fully Meets,3,18
+10289,M ,Married,Production Manager,Production       ,83082,Indeed,Voluntarily Terminated,unhappy,Needs Improvement,2,4
+10139,F,Single,Production Technician I,Production       ,51908,Indeed,Active,N/A-StillEmployed,Fully Meets,3,14
+10227,F,Single,Production Technician I,Production       ,61242,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,7
+10236,F,Divorced,Production Technician I,Production       ,45069,Employee Referral,Active,N/A-StillEmployed,Fully Meets,5,7
+10009,F,Divorced,Production Technician II,Production       ,60724,LinkedIn,Active,N/A-StillEmployed,Exceeds,4,11
+10060,F,Separated,Production Technician I,Production       ,60436,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,9
+10034,M ,Married,Production Technician I,Production       ,46837,CareerBuilder,Voluntarily Terminated,more money,Exceeds,4,9
+10156,F,Married,Database Administrator,IT/IS,105700,Indeed,Active,N/A-StillEmployed,Fully Meets,3,2
+10036,F,Single,Production Technician II,Production       ,63322,LinkedIn,Active,N/A-StillEmployed,Exceeds,3,1
+10138,F,Married,Production Technician I,Production       ,61154,CareerBuilder,Voluntarily Terminated,unhappy,Fully Meets,4,4
+10244,F,Single,Sales Manager,Sales,68999,Google Search,Voluntarily Terminated,maternity leave - did not return,Fully Meets,5,2
+10192,M ,Single,Production Technician I,Production       ,50482,Indeed,Active,N/A-StillEmployed,Fully Meets,4,10
+10231,M ,Single,Area Sales Manager,Sales,65310,Indeed,Active,N/A-StillEmployed,Fully Meets,5,13
+10089,F,Married,President & CEO,Executive Office,250000,Indeed,Active,N/A-StillEmployed,Fully Meets,3,10
+10166,F,Married,Production Technician I,Production       ,54005,Google Search,Voluntarily Terminated,more money,Fully Meets,5,16
+10170,F,Married,Production Technician I,Production       ,45433,Google Search,Voluntarily Terminated,more money,Fully Meets,4,6
+10208,M ,Single,Production Technician I,Production       ,46654,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,3
+10176,M ,Married,Production Technician I,Production       ,63973,Indeed,Active,N/A-StillEmployed,Fully Meets,3,17
+10165,M ,Single,Area Sales Manager,Sales,71339,Diversity Job Fair,Active,N/A-StillEmployed,Fully Meets,5,20
+10113,M ,Married,Sr. Network Engineer,IT/IS,93206,Employee Referral,Active,N/A-StillEmployed,Fully Meets,5,7
+10092,M ,Married,Production Manager,Production       ,82758,Employee Referral,Terminated for Cause,attendance,Fully Meets,4,9
+10106,F,Divorced,Production Technician II,Production       ,66074,Indeed,Voluntarily Terminated,Another position,Fully Meets,3,20
+10052,M ,Married,Production Technician I,Production       ,46120,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,13
+10038,M ,Divorced,Accountant I,Admin Offices,64520,Website,Active,N/A-StillEmployed,Fully Meets,4,3
+10249,M ,Married,Production Technician II,Production       ,61962,Google Search,Voluntarily Terminated,more money,Fully Meets,3,20
+10232,F,Single,Senior BI Developer,IT/IS,81584,Indeed,Active,N/A-StillEmployed,Fully Meets,5,2
+10087,F,Single,Production Technician I,Production       ,63676,CareerBuilder,Voluntarily Terminated,return to school,Fully Meets,3,17
+10134,M ,Married,Shared Services Manager,Admin Offices,93046,CareerBuilder,Active,N/A-StillEmployed,Fully Meets,4,20
+10251,M ,Married,Production Technician I,Production       ,64738,Google Search,Active,N/A-StillEmployed,Fully Meets,3,10
+10103,M ,Separated,Area Sales Manager,Sales,70468,Website,Active,N/A-StillEmployed,Fully Meets,3,16
+10017,F,Married,Production Manager,Production       ,77915,Website,Active,N/A-StillEmployed,Exceeds,3,11
+10186,F,Married,Production Technician I,Production       ,52624,Indeed,Voluntarily Terminated,unhappy,Fully Meets,4,16
+10137,M ,Married,Production Technician II,Production       ,63450,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,7
+10008,F,Single,IT Support,IT/IS,51777,Diversity Job Fair,Active,N/A-StillEmployed,Exceeds,4,14
+10096,F,Widowed,Production Technician II,Production       ,67237,LinkedIn,Voluntarily Terminated,more money,Fully Meets,4,15
+10035,F,Single,Production Technician II,Production       ,73330,Indeed,Active,N/A-StillEmployed,Exceeds,4,19
+10057,F,Married,Production Technician I,Production       ,52057,Website,Active,N/A-StillEmployed,Fully Meets,3,6
+10004,F,Single,Production Technician I,Production       ,47434,Diversity Job Fair,Voluntarily Terminated,Another position,Exceeds,4,17
+10191,M ,Widowed,Production Technician I,Production       ,52788,Indeed,Voluntarily Terminated,hours,Fully Meets,4,18
+10219,F,Single,Production Technician I,Production       ,45395,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,14
+10077,F,Married,Production Technician II,Production       ,62385,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,4
+10073,F,Married,Production Technician II,Production       ,68407,LinkedIn,Voluntarily Terminated,Another position,Fully Meets,4,16
+10279,F,Married,Production Technician I,Production       ,61349,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,11
+10110,F,Single,Software Engineer,Software Engineering,105688,Google Search,Active,N/A-StillEmployed,Fully Meets,5,14
+10053,F,Married,Production Technician I,Production       ,54132,Indeed,Active,N/A-StillEmployed,Fully Meets,4,8
+10076,F,Single,Production Technician II,Production       ,55315,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,16
+10145,F,Married,Production Technician I,Production       ,62810,CareerBuilder,Active,N/A-StillEmployed,Fully Meets,3,20
+10202,M ,Married,Area Sales Manager,Sales,63291,Website,Active,N/A-StillEmployed,Fully Meets,4,7
+10128,F,Single,Production Technician I,Production       ,62659,Diversity Job Fair,Voluntarily Terminated,Another position,Fully Meets,4,17
+10068,F,Single,Production Technician I,Production       ,55688,CareerBuilder,Active,N/A-StillEmployed,Fully Meets,4,10
+10116,M ,Single,Production Manager,Production       ,83667,Indeed,Active,N/A-StillEmployed,Fully Meets,3,2
+10298,M ,Single,Production Technician II,Production       ,55800,LinkedIn,Voluntarily Terminated,unhappy,PIP,2,6
+10213,M ,Married,Production Technician II,Production       ,58207,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,14
+10288,M ,Married,IT Manager - Infra,IT/IS,157000,Diversity Job Fair,Active,N/A-StillEmployed,Needs Improvement,3,13
+10025,F,Single,Production Technician II,Production       ,72460,Indeed,Active,N/A-StillEmployed,Exceeds,3,1
+10223,M ,Single,Production Technician II,Production       ,72106,Diversity Job Fair,Active,N/A-StillEmployed,Fully Meets,4,12
+10151,F,Married,Network Engineer,IT/IS,52599,CareerBuilder,Active,N/A-StillEmployed,Fully Meets,3,6
+10254,F,Divorced,Production Technician I,Production       ,63430,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,18
+10120,M ,Separated,Production Technician II,Production       ,74417,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,11
+10216,M ,Single,Production Technician I,Production       ,57575,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,13
+10079,M ,Single,Senior BI Developer,IT/IS,87921,Indeed,Active,N/A-StillEmployed,Fully Meets,3,17
+10215,M ,Single,Production Technician I,Production       ,50470,Diversity Job Fair,Voluntarily Terminated,return to school,Fully Meets,3,19
+10185,M ,Married,Production Technician I,Production       ,46664,Employee Referral,Voluntarily Terminated,more money,Fully Meets,3,10
+10063,M ,Married,Production Technician I,Production       ,48495,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,11
+10037,F,Separated,Production Technician I,Production       ,52984,Diversity Job Fair,Active,N/A-StillEmployed,Exceeds,3,12
+10042,F,Single,Area Sales Manager,Sales,63695,Indeed,Active,N/A-StillEmployed,Fully Meets,5,2
+10206,F,Single,Production Technician I,Production       ,62061,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,4
+10104,F,Single,Production Technician II,Production       ,66738,Indeed,Active,N/A-StillEmployed,Fully Meets,5,5
+10303,F,Single,Production Technician I,Production       ,52674,LinkedIn,Terminated for Cause,performance,PIP,2,3
+10078,F,Married,Production Technician II,Production       ,71966,LinkedIn,Voluntarily Terminated,unhappy,Fully Meets,3,17
+10121,F,Single,Area Sales Manager,Sales,63051,Indeed,Active,N/A-StillEmployed,Fully Meets,3,1
+10021,M ,Married,Production Technician I,Production       ,47414,LinkedIn,Active,N/A-StillEmployed,Exceeds,3,13
+10281,M ,Single,Production Technician I,Production       ,53060,LinkedIn,Active,N/A-StillEmployed,Needs Improvement,3,6
+10041,M ,Single,Area Sales Manager,Sales,68829,Website,Active,N/A-StillEmployed,Fully Meets,5,18
+10148,F,Married,Production Technician I,Production       ,63515,Google Search,Voluntarily Terminated,Another position,Fully Meets,4,7
+10005,M ,Single,Software Engineer,Software Engineering,108987,Diversity Job Fair,Voluntarily Terminated,Another position,Exceeds,5,13
+10259,M ,Married,Data Analyst,IT/IS,93093,Employee Referral,Voluntarily Terminated,performance,Fully Meets,4,19
+10286,M ,Single,Production Technician I,Production       ,53564,Google Search,Voluntarily Terminated,career change,Needs Improvement,5,15
+10297,F,Married,Production Technician II,Production       ,60270,CareerBuilder,Voluntarily Terminated,unhappy,Needs Improvement,5,2
+10171,F,Single,Production Technician I,Production       ,45998,LinkedIn,Voluntarily Terminated,medical issues,Fully Meets,4,5
+10032,F,Married,Production Technician II,Production       ,57954,Indeed,Voluntarily Terminated,more money,Exceeds,5,12
+10130,F,Married,Production Manager,Production       ,74669,Indeed,Voluntarily Terminated,Another position,Fully Meets,5,6
+10217,F,Married,Production Technician II,Production       ,74226,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,14
+10016,F,Married,Data Analyst,IT/IS,93554,Employee Referral,Active,N/A-StillEmployed,Exceeds,5,16
+10050,M ,Married,Production Technician I,Production       ,64724,Google Search,Voluntarily Terminated,more money,Fully Meets,3,13
+10164,M ,Single,Production Technician I,Production       ,47001,Google Search,Active,N/A-StillEmployed,Fully Meets,3,15
+10124,F,Married,Area Sales Manager,Sales,61844,Website,Active,N/A-StillEmployed,Fully Meets,5,9
+10187,F,Divorced,Production Technician I,Production       ,46799,Google Search,Voluntarily Terminated,Another position,Fully Meets,4,14
+10225,M ,Single,Production Technician I,Production       ,59472,Employee Referral,Active,N/A-StillEmployed,Fully Meets,3,14
+10262,F,Divorced,Production Technician I,Production       ,46430,Indeed,Voluntarily Terminated,unhappy,Fully Meets,5,16
+10131,M ,Married,Software Engineer,Software Engineering,83363,Diversity Job Fair,Voluntarily Terminated,career change,Fully Meets,4,4
+10239,F,Married,BI Developer,IT/IS,95920,Indeed,Active,N/A-StillEmployed,Fully Meets,4,10
+10152,M ,Divorced,Production Technician I,Production       ,61729,Indeed,Voluntarily Terminated,more money,Fully Meets,5,19
+10140,M ,Married,Area Sales Manager,Sales,61809,CareerBuilder,Active,N/A-StillEmployed,Fully Meets,3,4
+10058,M ,Divorced,Production Technician I,Production       ,45115,LinkedIn,Voluntarily Terminated,retiring,Fully Meets,4,11
+10011,F,Married,Production Technician I,Production       ,46738,Google Search,Active,N/A-StillEmployed,Exceeds,5,16
+10230,F,Divorced,Production Technician II,Production       ,64971,Google Search,Voluntarily Terminated,return to school,Fully Meets,4,10
+10224,M ,Married,Production Technician II,Production       ,55578,Indeed,Voluntarily Terminated,Another position,Fully Meets,5,13
+10047,M ,Married,Production Technician I,Production       ,50428,Indeed,Voluntarily Terminated,attendance,Fully Meets,3,11
+10285,F,Married,Production Technician I,Production       ,61422,Indeed,Terminated for Cause,attendance,Needs Improvement,3,16
+10020,M ,Widowed,Production Technician I,Production       ,63353,Employee Referral,Active,N/A-StillEmployed,Exceeds,5,4
+10162,F,Married,Data Analyst,IT/IS,89883,Employee Referral,Active,N/A-StillEmployed,Fully Meets,5,15
+10149,F,Single,Principal Data Architect,IT/IS,120000,LinkedIn,Voluntarily Terminated,Another position,Fully Meets,3,12
+10086,F,Single,Data Architect,IT/IS,150290,Indeed,Active,N/A-StillEmployed,Fully Meets,3,17
+10054,F,Separated,Production Technician I,Production       ,60627,Website,Active,N/A-StillEmployed,Fully Meets,4,8
+10065,M ,Single,Production Technician I,Production       ,53180,Google Search,Voluntarily Terminated,Another position,Fully Meets,5,4
+10198,M ,Single,IT Manager - DB,IT/IS,140920,Indeed,Active,N/A-StillEmployed,Fully Meets,5,13
+10222,M ,Divorced,IT Manager - DB,IT/IS,148999,Diversity Job Fair,Voluntarily Terminated,hours,Fully Meets,4,8
+10126,F,Married,Software Engineer,Software Engineering,86214,Indeed,Active,N/A-StillEmployed,Fully Meets,3,2
+10295,F,Single,Production Technician I,Production       ,47750,Diversity Job Fair,Active,N/A-StillEmployed,Needs Improvement,4,4
+10260,M ,Single,Production Technician I,Production       ,46428,Google Search,Voluntarily Terminated,relocation out of area,Fully Meets,5,7
+10233,M ,Married,Production Technician II,Production       ,57975,CareerBuilder,Active,N/A-StillEmployed,Fully Meets,3,13
+10229,M ,Divorced,Data Analyst ,IT/IS,88527,LinkedIn,Voluntarily Terminated,hours,Fully Meets,3,2
+10169,F,Married,Production Technician I,Production       ,56147,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,2
+10071,F,Single,Production Technician I,Production       ,50923,Google Search,Active,N/A-StillEmployed,Fully Meets,5,14
+10179,F,Married,Network Engineer,IT/IS,50750,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,7
+10091,F,Married,Production Technician I,Production       ,52087,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,15
+10178,M ,Married,Data Analyst,IT/IS,87826,Employee Referral,Active,N/A-StillEmployed,Fully Meets,3,16
+10039,F,Single,Administrative Assistant,Admin Offices,51920,Website,Active,N/A-StillEmployed,Fully Meets,3,2
+10095,F,Single,Production Technician II,Production       ,63878,CareerBuilder,Voluntarily Terminated,maternity leave - did not return,Fully Meets,4,20
+10027,M ,Single,Production Technician II,Production       ,60656,Indeed,Active,N/A-StillEmployed,Exceeds,3,4
+10291,M ,Divorced,Sales Manager,Sales,72992,Diversity Job Fair,Active,N/A-StillEmployed,Needs Improvement,4,16
+10153,F,Married,Administrative Assistant,Admin Offices,55000,Diversity Job Fair,Voluntarily Terminated,career change,Fully Meets,4,17
+10157,F,Single,Production Technician I,Production       ,58939,Employee Referral,Active,N/A-StillEmployed,Fully Meets,3,16
+10119,F,Married,IT Support,IT/IS,66593,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,19
+10180,M ,Married,Sr. Network Engineer,IT/IS,87565,LinkedIn,Active,N/A-StillEmployed,Fully Meets,4,13
+10302,F,Married,Production Technician I,Production       ,64021,Indeed,Active,N/A-StillEmployed,PIP,2,20
+10090,F,Married,Production Manager,Production       ,65714,LinkedIn,Active,N/A-StillEmployed,Fully Meets,5,15
+10030,F,Divorced,Production Technician I,Production       ,62425,LinkedIn,Voluntarily Terminated,unhappy,Exceeds,4,16
+10278,F,Divorced,Production Technician I,Production       ,47961,Google Search,Active,N/A-StillEmployed,Fully Meets,4,9
+10307,M ,Married,Area Sales Manager,Sales,58273,Website,Active,N/A-StillEmployed,PIP,2,5
+10147,M ,Single,Accountant I,Admin Offices,63003,Indeed,Active,N/A-StillEmployed,Fully Meets,5,9
+10266,M ,Married,Production Technician I,Production       ,61355,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,4
+10241,F,Married,Area Sales Manager,Sales,60120,Indeed,Active,N/A-StillEmployed,Fully Meets,4,18
+10158,F,Married,Production Manager,Production       ,63682,Indeed,Active,N/A-StillEmployed,Fully Meets,4,12
+10117,M ,Married,Production Technician I,Production       ,63025,Google Search,Active,N/A-StillEmployed,Fully Meets,5,10
+10209,F,Single,Production Technician I,Production       ,59238,Indeed,Active,N/A-StillEmployed,Fully Meets,5,13
+10024,M ,Single,Software Engineer,Software Engineering,92989,LinkedIn,Active,N/A-StillEmployed,Exceeds,5,1
+10173,M ,Married,BI Developer,IT/IS,90100,Indeed,Active,N/A-StillEmployed,Fully Meets,3,14
+10221,F,Married,Production Technician I,Production       ,60754,Diversity Job Fair,Voluntarily Terminated,Another position,Fully Meets,5,11
+10146,F,Married,Production Technician II,Production       ,72202,Google Search,Voluntarily Terminated,Another position,Fully Meets,3,3
+10161,F,Single,Area Sales Manager,Sales,58370,Indeed,Active,N/A-StillEmployed,Fully Meets,3,18
+10141,F,Single,Production Technician I,Production       ,48413,Indeed,Voluntarily Terminated,return to school,Fully Meets,4,1
+10268,M ,Widowed,Production Technician II,Production       ,67176,Other,Voluntarily Terminated,military,Fully Meets,4,15
+10123,F,Divorced,Production Technician I,Production       ,56339,Indeed,Active,N/A-StillEmployed,Fully Meets,5,4
+10013,M ,Separated,Area Sales Manager,Sales,64397,Indeed,Active,N/A-StillEmployed,Exceeds,3,6
+10287,F,Single,Production Technician I,Production       ,63025,LinkedIn,Active,N/A-StillEmployed,Needs Improvement,5,18
+10044,M ,Married,Network Engineer,IT/IS,75281,CareerBuilder,Voluntarily Terminated,medical issues,Fully Meets,3,11
+10102,M ,Single,Software Engineer,Software Engineering,100416,Diversity Job Fair,Voluntarily Terminated,medical issues,Fully Meets,3,9
+10270,F,Single,Production Technician II,Production       ,74813,LinkedIn,Voluntarily Terminated,unhappy,Fully Meets,3,5
+10045,M ,Married,Network Engineer,IT/IS,76029,Employee Referral,Active,N/A-StillEmployed,Fully Meets,4,8
+10205,F,Married,Area Sales Manager,Sales,57859,Indeed,Active,N/A-StillEmployed,Fully Meets,3,16
+10014,M ,Divorced,Production Technician I,Production       ,58523,LinkedIn,Voluntarily Terminated,maternity leave - did not return,Exceeds,5,15
+10144,M ,Divorced,Production Manager,Production       ,88976,Employee Referral,Active,N/A-StillEmployed,Fully Meets,3,19
+10253,M ,Single,Area Sales Manager,Sales,55875,Website,Active,N/A-StillEmployed,Fully Meets,4,11
+10118,M ,Married,Database Administrator,IT/IS,113999,Employee Referral,Terminated for Cause,"no-call, no-show",Fully Meets,3,9
+10022,F,Married,Production Technician I,Production       ,49773,Google Search,Terminated for Cause,gross misconduct,Exceeds,5,18
+10183,F,Single,Production Technician I,Production       ,62068,LinkedIn,Active,N/A-StillEmployed,Fully Meets,3,7
+10190,M ,Single,Production Technician II,Production       ,66541,Employee Referral,Active,N/A-StillEmployed,Fully Meets,5,4
+10274,F,Married,Production Manager,Production       ,80512,Diversity Job Fair,Voluntarily Terminated,Another position,Fully Meets,3,5
+10293,F,Single,Production Technician I,Production       ,50274,CareerBuilder,Voluntarily Terminated,career change,Needs Improvement,3,13
+10172,M ,Single,Senior BI Developer,IT/IS,84903,Indeed,Active,N/A-StillEmployed,Fully Meets,4,17
+10127,F,Widowed,Sr. Network Engineer,IT/IS,107226,Employee Referral,Active,N/A-StillEmployed,Fully Meets,4,7

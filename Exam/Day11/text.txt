@@ -1,0 +1,30 @@
+Title: Clustering Analysis and Classification using Python
+Aim:
+Clustering the data set using K-Mean technique and Classification
+
+Task:
+Working with K-Mean classification
+Working with Classification
+
+Exercises:
+Question-01
+i. Import the suitable libraries
+ii. Import the Bank.CSV file into Google Colab notebook
+iii. Make an array of dataset
+iv. Create the Elbow chart
+v. Find the number of clusters
+vi. Define the clusters for each record
+vii. Concatenate the dataset and the cluster index
+viii. Visualize the clusters
+ix. Find the cluster centroid for each cluster
+x. Visualize the cluster centroids in the scatter plot
+
+Question-02
+i. Import suitable libraries
+ii. Upload the data set Bank.CSV
+iii. Separate the data frame into two parts
+iv. Delete the class variable in independent dataset
+v. Split the dataset into test and training set
+vi. Find the prediction of the Using Decision tree
+vii. Construct the confusion matrix
+

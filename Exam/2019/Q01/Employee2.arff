@@ -1,0 +1,20 @@
+@relation Employee-weka.filters.unsupervised.attribute.ReplaceMissingValues
+
+@attribute ID numeric
+@attribute Age numeric
+@attribute Gender {Male,Female}
+@attribute Department {IT,Marketing,HR}
+@attribute Salary numeric
+@attribute Performance_Rating {Excellent,Good,Poor}
+
+@data
+1,29,Male,IT,60000,Excellent
+2,34,Female,Marketing,75000,Good
+3,28,Male,IT,55000,?
+4,40,Female,HR,80000,Excellent
+5,32,Male,IT,70000,Good
+6,33.444444,Female,Marketing,68000,Good
+7,29,Male,IT,61000,Poor
+8,45,Female,HR,67333.333333,Excellent
+9,31,Male,Marketing,65000,Poor
+10,33,Female,IT,72000,Excellent

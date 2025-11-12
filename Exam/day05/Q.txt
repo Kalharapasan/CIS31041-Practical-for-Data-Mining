@@ -1,0 +1,52 @@
+01. Pandas
+a. Import the pandas as pd
+b. Create the series
+c. Find the data type of the series
+d. Print the index of the element
+e. Multiply and add the element in the series
+f. Print the date
+g. Create the data frame
+h. Insert the given data frame and explain the output
+i. Find the datatype of data frame
+j. Find the first few values of the data frame
+k. Find the last records of the data frame
+l. Index values of data frame
+m. Find the column of the data frame
+n. Convert the data frame into numpy array
+o. Find the statistics summary of data frame
+p. Transpose the data frame
+q. Sort the data frame
+r. Retrieve the value from the data frame
+
+02. Import the data set
+a. Filter the first five records of the data set heart.csv
+b. Find the data type of attributes
+c. Find the information of data set
+d. Find the summary statistics of the data set
+e. Retrieve the information cp greater than 2
+
+03. Data visualization
+a. import the bank-data.csv file
+b. Retrieve the first five records in the data set
+c. Plot the data set
+d. Describe the data set
+e. Plot the data set income Vs children
+f. Construct the bar chart for region
+g. Construct the scatter plot for income and children and set the title as income vs children
+h. Construct the histogram for children
+
+04. Explanatory data analysis
+a. Import the libraries numpy, pandas, matplotlib.pyplot, seaborn
+b. Import the data set bank-data.csv as data
+c. Check the data type
+d. Check the data shape
+e. Check the attribute name of the data set
+f. Check the null values
+g. Remove the unwanted attribute
+h. Rename the Attribute name
+i. Construct the plot for pep
+j. Group the data sex and pep according to the count
+k. Construct the graph for pep vs sex
+l. Find the count of the attribute children according to the category
+m. Construct the graph for attribute children according to the category
+n. Construct the chart to illustrate pep, children and sex of the customer based on the count

@@ -1,0 +1,59 @@
+Task Breakdown:
+01. Matrix Implementation
+a. Create the matrix
+
+b. Transform the matrix
+
+02. Tuples Implementation
+a. Creating a tuple
+
+b. Create two tuples and merge together
+
+c. Print the elements in tuples
+
+03. Array
+a. Define an array
+
+b. Print the array
+
+c. Print the last element
+
+04. Date Functions
+a. Today's date
+
+b. Birthday
+
+05. Numpy
+a. Import the numpy array as np
+
+b. Concatenate two arrays
+
+c. Create an empty array
+
+d. Create an array of consecutive integers from 0 to a specified value
+
+e. Create a two-dimensional array
+
+f. Sort the array
+
+g. Find the shape, size, and dimension of the array
+
+h. Reshape the array
+
+i. Increase the dimension of the array
+
+j. Indexing and slicing
+
+k. Create an array from existing data
+
+l. Reshape the existing element
+
+m. Print the array in vertical and horizontal stack
+
+n. Split the array
+
+o. Basic array operations
+
+p. Summary of the array
+
+q. Multiply the elements in the array

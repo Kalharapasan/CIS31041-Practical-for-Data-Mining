@@ -1,0 +1,13 @@
+Basic components of a function:
+
+def: This keyword is used to define a function.
+
+function_name: This is the name of the function, which you choose to identify and call the function.
+
+(parameter1, parameter2, ...): These are optional input parameters that you can pass to the function. A function may have zero or more parameters.
+
+: The colon marks the start of the function block.
+
+Function Code: This is the set of statements that the function executes. It can contain any valid Python code.
+
+return result: The return statement is used to send the result of the function back to the caller. It is optional, and if not used, the function returns None.

@@ -1,0 +1,35 @@
+The type code `'i'` in the `array` module represents signed integers. There are several other type codes available in the `array` module, each corresponding to a different data type. Here are some commonly used type codes:
+
+- `'b'`: Represents signed char (1 byte)
+- `'B'`: Represents unsigned char (1 byte)
+- `'h'`: Represents signed short (2 bytes)
+- `'H'`: Represents unsigned short (2 bytes)
+- `'i'`: Represents signed int (2 or 4 bytes depending on the platform)
+- `'I'`: Represents unsigned int (2 or 4 bytes depending on the platform)
+- `'l'`: Represents signed long (4 bytes)
+- `'L'`: Represents unsigned long (4 bytes)
+- `'f'`: Represents float (4 bytes)
+- `'d'`: Represents double (8 bytes)
+
+These type codes allow you to specify the data type of the elements you want to store in the array. For example, `'f'` represents floating-point numbers, and `'d'` represents double-precision floating-point numbers.
+
+When creating an array, you pass the desired type code as the first argument to the `array` constructor. Here's an example of using different type codes:
+
+```python
+from array import array
+
+# Create arrays with different data types
+char_array = array('b', [65, 66, 67])  # 'b' for signed char
+float_array = array('f', [1.23, 4.56, 7.89])  # 'f' for float
+
+print("Char array:", char_array)
+print("Float array:", float_array)
+```
+
+Output:
+```
+Char array: array('b', [65, 66, 67])
+Float array: array('f', [1.2300000190734863, 4.559999942779541, 7.889999866485596])
+```
+
+Note that the actual size of the data types may vary based on the platform (32-bit or 64-bit). It's important to choose the appropriate data type based on your requirements and the range of values you need to store.
