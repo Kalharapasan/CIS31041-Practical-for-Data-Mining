@@ -76,8 +76,47 @@ Daily practice sessions covering:
 ## 🚀 Getting Started
 
 ### Prerequisites
+
+#### Install Python
+Ensure Python 3.8+ is installed on your system:
 ```bash
-pip install pandas numpy scikit-learn matplotlib seaborn mlxtend scipy
+python --version
+```
+
+#### Install Required Libraries
+```bash
+# Essential packages
+pip install pandas numpy scikit-learn matplotlib seaborn scipy
+
+# Association rule mining
+pip install mlxtend
+
+# Additional useful packages
+pip install jupyter notebook openpyxl liac-arff
+
+# For data visualization
+pip install plotly
+
+# Complete installation in one command
+pip install pandas numpy scikit-learn matplotlib seaborn mlxtend scipy jupyter liac-arff plotly openpyxl
+```
+
+### Environment Setup
+
+#### Using Virtual Environment (Recommended)
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# Windows PowerShell:
+.\venv\Scripts\Activate.ps1
+
+# Windows CMD:
+.\venv\Scripts\activate.bat
+
+# Install packages
+pip install -r requirements.txt
 ```
 
 ### Running Jupyter Notebooks
@@ -87,10 +126,18 @@ pip install pandas numpy scikit-learn matplotlib seaborn mlxtend scipy
    jupyter notebook
    ```
 3. Open the `.ipynb` file and run cells sequentially
+4. Use `Shift + Enter` to execute cells
 
 ### Running Python Scripts
 ```bash
+# Basic execution
 python <script_name>.py
+
+# With arguments
+python script.py --input data.csv --output results.csv
+
+# Using Python's interactive mode
+python -i script.py
 ```
 
 ## 📝 Key Topics Covered
