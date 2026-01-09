@@ -143,39 +143,182 @@ python -i script.py
 ## 📝 Key Topics Covered
 
 ### 1. Data Preprocessing
-- Handling missing values
-- Data normalization and standardization
-- Feature encoding (Label Encoding, One-Hot Encoding)
-- Data transformation
-- Outlier detection and treatment
+- **Handling Missing Values**
+  - Detection: `df.isnull()`, `df.isna()`, `df.info()`
+  - Removal: `df.dropna()`, `df.drop()`
+  - Imputation: Mean, median, mode, forward/backward fill
+  ```python
+  df['column'].fillna(df['column'].mean(), inplace=True)
+  ```
+
+- **Data Normalization and Standardization**
+  - Min-Max Scaling: Scale to [0,1]
+  - Z-score Standardization: Mean=0, StdDev=1
+  ```python
+  from sklearn.preprocessing import MinMaxScaler, StandardScaler
+  scaler = StandardScaler()
+  df_scaled = scaler.fit_transform(df)
+  ```
+
+- **Feature Encoding**
+  - Label Encoding: Convert categories to numbers
+  - One-Hot Encoding: Create binary columns
+  ```python
+  from sklearn.preprocessing import LabelEncoder
+  le = LabelEncoder()
+  df['encoded'] = le.fit_transform(df['category'])
+  ```
+
+- **Data Transformation**
+  - Log transformation
+  - Box-Cox transformation
+  - Power transformation
+
+- **Outlier Detection and Treatment**
+  - IQR method
+  - Z-score method
+  - Domain-specific rules
 
 ### 2. Exploratory Data Analysis (EDA)
-- Statistical summaries
-- Data visualization
-- Correlation analysis
-- Distribution analysis
+- **Statistical Summaries**
+  ```python
+  df.describe()  # Summary statistics
+  df.info()      # Data types and non-null counts
+  df.shape       # Dimensions
+  df.columns     # Column names
+  ```
+
+- **Data Visualization**
+  - Histograms: Distribution of numerical data
+  - Box plots: Identify outliers
+  - Scatter plots: Relationships between variables
+  - Correlation heatmaps: Feature relationships
+  - Bar charts: Categorical data
+  ```python
+  import matplotlib.pyplot as plt
+  import seaborn as sns
+  
+  # Correlation heatmap
+  sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+  plt.show()
+  ```
+
+- **Correlation Analysis**
+  ```python
+  df.corr()  # Pearson correlation
+  df.corr(method='spearman')  # Spearman correlation
+  ```
+
+- **Distribution Analysis**
+  - Normal distribution tests
+  - Skewness and kurtosis
+  - Q-Q plots
 
 ### 3. Classification
-- Decision Trees
-- k-Nearest Neighbors (k-NN)
-- Naive Bayes
-- Model evaluation metrics
+- **Decision Trees**
+  ```python
+  from sklearn.tree import DecisionTreeClassifier
+  clf = DecisionTreeClassifier(max_depth=5)
+  clf.fit(X_train, y_train)
+  predictions = clf.predict(X_test)
+  ```
+
+- **k-Nearest Neighbors (k-NN)**
+  ```python
+  from sklearn.neighbors import KNeighborsClassifier
+  knn = KNeighborsClassifier(n_neighbors=5)
+  knn.fit(X_train, y_train)
+  ```
+
+- **Naive Bayes**
+  ```python
+  from sklearn.naive_bayes import GaussianNB
+  nb = GaussianNB()
+  nb.fit(X_train, y_train)
+  ```
+
+- **Model Evaluation Metrics**
+  - Accuracy, Precision, Recall, F1-Score
+  - ROC-AUC curve
+  - Classification report
 
 ### 4. Clustering
-- K-Means clustering
-- Hierarchical clustering
-- Cluster evaluation
+- **K-Means Clustering**
+  ```python
+  from sklearn.cluster import KMeans
+  kmeans = KMeans(n_clusters=3, random_state=42)
+  clusters = kmeans.fit_predict(X)
+  ```
+
+- **Hierarchical Clustering**
+  ```python
+  from sklearn.cluster import AgglomerativeClustering
+  hc = AgglomerativeClustering(n_clusters=3)
+  labels = hc.fit_predict(X)
+  ```
+
+- **Cluster Evaluation**
+  - Silhouette score
+  - Elbow method
+  - Davies-Bouldin index
+  ```python
+  from sklearn.metrics import silhouette_score
+  score = silhouette_score(X, labels)
+  ```
 
 ### 5. Association Rule Mining
-- Apriori algorithm
-- Support, Confidence, and Lift metrics
-- Market basket analysis
+- **Apriori Algorithm**
+  ```python
+  from mlxtend.frequent_patterns import apriori, association_rules
+  
+  # Find frequent itemsets
+  frequent_itemsets = apriori(df, min_support=0.01, use_colnames=True)
+  
+  # Generate association rules
+  rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.5)
+  ```
+
+- **Key Metrics**
+  - **Support**: Frequency of itemset
+    - `support(A) = count(A) / total_transactions`
+  - **Confidence**: Probability of B given A
+    - `confidence(A→B) = support(A∪B) / support(A)`
+  - **Lift**: Strength of association
+    - `lift(A→B) = confidence(A→B) / support(B)`
+
+- **Market Basket Analysis**
+  - Identifying product associations
+  - Cross-selling opportunities
+  - Store layout optimization
 
 ### 6. Model Evaluation
-- Train-test split
-- Cross-validation
-- Confusion matrix
-- Accuracy, Precision, Recall, F1-Score
+- **Train-Test Split**
+  ```python
+  from sklearn.model_selection import train_test_split
+  X_train, X_test, y_train, y_test = train_test_split(
+      X, y, test_size=0.3, random_state=42
+  )
+  ```
+
+- **Cross-Validation**
+  ```python
+  from sklearn.model_selection import cross_val_score
+  scores = cross_val_score(model, X, y, cv=5)
+  print(f"Average accuracy: {scores.mean():.2f}")
+  ```
+
+- **Confusion Matrix**
+  ```python
+  from sklearn.metrics import confusion_matrix, classification_report
+  cm = confusion_matrix(y_test, y_pred)
+  print(classification_report(y_test, y_pred))
+  ```
+
+- **Performance Metrics**
+  - **Accuracy**: (TP + TN) / Total
+  - **Precision**: TP / (TP + FP)
+  - **Recall (Sensitivity)**: TP / (TP + FN)
+  - **F1-Score**: 2 × (Precision × Recall) / (Precision + Recall)
 
 ## 📖 File Formats
 
