@@ -337,12 +337,243 @@ Standard comma-separated values format for tabular data.
 ## 🔍 Important Scripts
 
 ### EDA Scripts
-- `eda_full_script.py`: Comprehensive exploratory data analysis
-- `eda_short_revision.py`: Quick EDA revision notes
+- **`eda_full_script.py`**: Comprehensive exploratory data analysis
+  - Complete statistical analysis
+  - Multiple visualization types
+  - Correlation analysis
+  - Missing value detection
+  
+- **`eda_short_revision.py`**: Quick EDA revision notes
+  - Condensed analysis workflow
+  - Key visualization examples
+  - Quick reference guide
 
 ### Specialized Scripts
-- `data_preprocessing_and_association_rules.py`: Combined preprocessing and association rules
-- `bank_clustering_classification.py`: Banking data analysis with clustering and classification
+- **`data_preprocessing_and_association_rules.py`**: 
+  - Data cleaning pipeline
+  - Feature engineering
+  - Association rule mining implementation
+  - Frequent itemset generation
+  
+- **`bank_clustering_classification.py`**: 
+  - Banking data analysis
+  - Customer segmentation using clustering
+  - Predictive classification models
+  - Model comparison and evaluation
+
+### Lab-Specific Scripts
+- **`code.py`**: General purpose data mining examples
+- **`04.py`, `05.py`**: Lab-specific implementations
+- **`LB04.py`, `LB06.py`**: Labsheet code solutions
+
+## 💡 Common Code Patterns
+
+### Loading Data
+```python
+import pandas as pd
+
+# CSV files
+df = pd.read_csv('data.csv')
+
+# ARFF files (using liac-arff)
+import arff
+with open('data.arff', 'r') as f:
+    dataset = arff.load(f)
+    df = pd.DataFrame(dataset['data'], columns=[attr[0] for attr in dataset['attributes']])
+
+# Excel files
+df = pd.read_excel('data.xlsx')
+```
+
+### Basic Data Exploration
+```python
+# Quick overview
+print(df.head())
+print(df.info())
+print(df.describe())
+print(df.shape)
+
+# Check for missing values
+print(df.isnull().sum())
+
+# Check data types
+print(df.dtypes)
+
+# Unique values in categorical columns
+print(df['column'].value_counts())
+```
+
+### Data Cleaning Pipeline
+```python
+# Remove duplicates
+df = df.drop_duplicates()
+
+# Handle missing values
+df = df.fillna(df.mean())  # For numerical columns
+df = df.fillna(df.mode().iloc[0])  # For categorical columns
+
+# Remove outliers using IQR
+Q1 = df['column'].quantile(0.25)
+Q3 = df['column'].quantile(0.75)
+IQR = Q3 - Q1
+df = df[~((df['column'] < (Q1 - 1.5 * IQR)) | (df['column'] > (Q3 + 1.5 * IQR)))]
+```
+
+### Building a Complete Pipeline
+```python
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.tree import DecisionTreeClassifier
+
+# Create pipeline
+pipeline = Pipeline([
+    ('scaler', StandardScaler()),
+    ('classifier', DecisionTreeClassifier())
+])
+
+# Fit and predict
+pipeline.fit(X_train, y_train)
+predictions = pipeline.predict(X_test)
+```
+
+## 🎓 Study Tips & Best Practices
+
+### 1. Workflow Organization
+- Keep each labsheet in its dedicated folder
+- Use descriptive file names
+- Comment your code extensively
+- Save multiple versions during development
+
+### 2. Data Handling
+- Always create a copy before modifying: `df_clean = df.copy()`
+- Understand your data before preprocessing
+- Document all transformations
+- Keep raw data unchanged
+
+### 3. Model Development
+- Start simple, then increase complexity
+- Always split data before any preprocessing
+- Use cross-validation for robust evaluation
+- Compare multiple algorithms
+
+### 4. Jupyter Notebook Tips
+- Use markdown cells for documentation
+- Restart kernel and run all cells before submission
+- Include visualizations to support findings
+- Clear outputs before version control
+
+### 5. Debugging Strategies
+- Print intermediate results
+- Use `df.head()` frequently
+- Check data types with `df.dtypes`
+- Verify shapes after transformations
+- Use small data samples for testing
+
+## 🛠️ Troubleshooting
+
+### Common Issues and Solutions
+
+#### Issue: Module Not Found
+```bash
+# Solution: Install missing package
+pip install package_name
+
+# or upgrade pip first
+python -m pip install --upgrade pip
+```
+
+#### Issue: Jupyter Kernel Not Found
+```bash
+# Solution: Install ipykernel
+pip install ipykernel
+python -m ipykernel install --user
+```
+
+#### Issue: ARFF File Reading Error
+```python
+# Solution: Use scipy or liac-arff
+pip install liac-arff
+
+# Alternative using scipy
+from scipy.io import arff
+data, meta = arff.loadarff('file.arff')
+df = pd.DataFrame(data)
+```
+
+#### Issue: Memory Error with Large Datasets
+```python
+# Solution: Read data in chunks
+chunk_iter = pd.read_csv('large_file.csv', chunksize=10000)
+for chunk in chunk_iter:
+    process(chunk)
+```
+
+#### Issue: Categorical Data in Scikit-learn
+```python
+# Solution: Encode categorical variables
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+df['encoded_column'] = le.fit_transform(df['category_column'])
+```
+
+## 📊 Dataset Details
+
+### Banking Datasets
+**Files**: `bank-data.csv`, `Bank1.csv`, `bank.arff`
+
+**Features**:
+- Customer demographics (age, job, marital status, education)
+- Financial information (balance, loan status)
+- Marketing campaign data (contact, duration, campaign)
+- Target variable: deposit subscription (yes/no)
+
+**Use Cases**:
+- Customer segmentation
+- Churn prediction
+- Marketing campaign optimization
+
+### Heart Disease Dataset
+**File**: `heart.csv`
+
+**Features**:
+- Age, sex, chest pain type
+- Resting blood pressure, cholesterol
+- Fasting blood sugar, ECG results
+- Maximum heart rate, exercise-induced angina
+- Target: Heart disease presence (0/1)
+
+**Use Cases**:
+- Disease prediction
+- Risk factor analysis
+- Healthcare decision support
+
+### HR Dataset
+**File**: `Company_ABC_HumanResource.csv`
+
+**Features**:
+- Employee demographics
+- Job satisfaction, performance rating
+- Work-life balance, years at company
+- Attrition status
+
+**Use Cases**:
+- Employee attrition prediction
+- HR analytics
+- Workforce planning
+
+### Telecom Dataset
+**Files**: `telco_*.csv`, `telco_*.arff`
+
+**Features**:
+- Customer information
+- Service subscriptions
+- Billing information
+- Churn status
+
+**Use Cases**:
+- Customer retention
+- Service optimization
+- Revenue forecasting
 
 ## 📚 Resources
 
