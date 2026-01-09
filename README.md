@@ -784,12 +784,282 @@ print(classification_report(y_test, y_pred))
 ## 🎯 Learning Objectives
 
 By completing this coursework, you will:
-- Master data preprocessing techniques
-- Understand and implement classification algorithms
-- Perform clustering analysis
-- Extract association rules from transactional data
-- Evaluate machine learning models effectively
-- Visualize and communicate data insights
+- ✅ Master data preprocessing techniques for real-world datasets
+- ✅ Understand and implement classification algorithms (Decision Trees, k-NN, Naive Bayes)
+- ✅ Perform clustering analysis for customer segmentation
+- ✅ Extract association rules from transactional data
+- ✅ Evaluate machine learning models effectively using appropriate metrics
+- ✅ Visualize and communicate data insights professionally
+- ✅ Work with multiple data formats (CSV, ARFF, Excel)
+- ✅ Build complete data mining pipelines from raw data to insights
+- ✅ Apply cross-validation and other model validation techniques
+- ✅ Interpret model results and make data-driven recommendations
+
+## 📈 Performance Metrics Reference
+
+### Classification Metrics
+
+| Metric | Formula | When to Use | Range |
+|--------|---------|-------------|-------|
+| **Accuracy** | (TP + TN) / Total | Balanced datasets | 0 to 1 |
+| **Precision** | TP / (TP + FP) | Minimize false positives | 0 to 1 |
+| **Recall** | TP / (TP + FN) | Minimize false negatives | 0 to 1 |
+| **F1-Score** | 2 × (P × R) / (P + R) | Balance precision & recall | 0 to 1 |
+| **ROC-AUC** | Area under ROC curve | Overall model performance | 0 to 1 |
+
+### Clustering Metrics
+
+| Metric | Description | Interpretation |
+|--------|-------------|----------------|
+| **Silhouette Score** | Cohesion vs separation | Higher is better (-1 to 1) |
+| **Davies-Bouldin Index** | Average similarity ratio | Lower is better (≥0) |
+| **Inertia** | Sum of squared distances | Lower is better |
+| **Calinski-Harabasz** | Variance ratio | Higher is better |
+
+### Regression Metrics
+
+| Metric | Formula | Description |
+|--------|---------|-------------|
+| **MAE** | mean(\|y_true - y_pred\|) | Mean absolute error |
+| **MSE** | mean((y_true - y_pred)²) | Mean squared error |
+| **RMSE** | √MSE | Root mean squared error |
+| **R²** | 1 - (SS_res / SS_tot) | Coefficient of determination |
+
+## 🔧 Advanced Techniques
+
+### Hyperparameter Tuning
+```python
+from sklearn.model_selection import GridSearchCV
+
+# Define parameter grid
+param_grid = {
+    'max_depth': [3, 5, 7, 10],
+    'min_samples_split': [2, 5, 10],
+    'min_samples_leaf': [1, 2, 4]
+}
+
+# Grid search
+grid_search = GridSearchCV(
+    DecisionTreeClassifier(),
+    param_grid,
+    cv=5,
+    scoring='accuracy'
+)
+grid_search.fit(X_train, y_train)
+
+print(f"Best parameters: {grid_search.best_params_}")
+print(f"Best score: {grid_search.best_score_:.2f}")
+```
+
+### Feature Selection
+```python
+from sklearn.feature_selection import SelectKBest, chi2, RFE
+from sklearn.ensemble import RandomForestClassifier
+
+# Chi-square test
+selector = SelectKBest(chi2, k=10)
+X_selected = selector.fit_transform(X, y)
+
+# Recursive Feature Elimination
+rfe = RFE(estimator=RandomForestClassifier(), n_features_to_select=10)
+X_rfe = rfe.fit_transform(X, y)
+
+# Feature importance from tree-based model
+rf = RandomForestClassifier()
+rf.fit(X, y)
+importance = pd.DataFrame({
+    'feature': X.columns,
+    'importance': rf.feature_importances_
+}).sort_values('importance', ascending=False)
+```
+
+### Handling Imbalanced Datasets
+```python
+from imblearn.over_sampling import SMOTE
+from imblearn.under_sampling import RandomUnderSampler
+from sklearn.utils import resample
+
+# SMOTE (Synthetic Minority Over-sampling)
+smote = SMOTE(random_state=42)
+X_resampled, y_resampled = smote.fit_resample(X, y)
+
+# Under-sampling
+undersampler = RandomUnderSampler(random_state=42)
+X_resampled, y_resampled = undersampler.fit_resample(X, y)
+
+# Manual over-sampling
+df_majority = df[df['target'] == 0]
+df_minority = df[df['target'] == 1]
+df_minority_upsampled = resample(df_minority, 
+                                  replace=True,
+                                  n_samples=len(df_majority),
+                                  random_state=42)
+df_balanced = pd.concat([df_majority, df_minority_upsampled])
+```
+
+### Ensemble Methods
+```python
+from sklearn.ensemble import (
+    RandomForestClassifier,
+    GradientBoostingClassifier,
+    VotingClassifier,
+    StackingClassifier
+)
+
+# Random Forest
+rf = RandomForestClassifier(n_estimators=100)
+
+# Gradient Boosting
+gb = GradientBoostingClassifier(n_estimators=100)
+
+# Voting Classifier
+voting_clf = VotingClassifier(
+    estimators=[
+        ('dt', DecisionTreeClassifier()),
+        ('rf', RandomForestClassifier()),
+        ('nb', GaussianNB())
+    ],
+    voting='soft'
+)
+
+# Stacking
+stacking_clf = StackingClassifier(
+    estimators=[
+        ('dt', DecisionTreeClassifier()),
+        ('rf', RandomForestClassifier())
+    ],
+    final_estimator=LogisticRegression()
+)
+```
+
+## 📊 Visualization Gallery
+
+### Essential Plots
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Set style
+sns.set_style("whitegrid")
+
+# Distribution plot
+plt.figure(figsize=(10, 6))
+sns.histplot(df['column'], kde=True)
+plt.title('Distribution of Column')
+plt.show()
+
+# Box plot for outliers
+plt.figure(figsize=(12, 6))
+sns.boxplot(data=df)
+plt.xticks(rotation=45)
+plt.title('Box Plot for Outlier Detection')
+plt.show()
+
+# Correlation heatmap
+plt.figure(figsize=(12, 8))
+sns.heatmap(df.corr(), annot=True, cmap='coolwarm', center=0)
+plt.title('Correlation Matrix')
+plt.show()
+
+# Pair plot
+sns.pairplot(df, hue='target')
+plt.show()
+
+# Confusion matrix
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_pred)
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.title('Confusion Matrix')
+plt.show()
+
+# Feature importance
+feature_importance = pd.DataFrame({
+    'feature': X.columns,
+    'importance': model.feature_importances_
+}).sort_values('importance', ascending=False).head(10)
+
+plt.figure(figsize=(10, 6))
+sns.barplot(x='importance', y='feature', data=feature_importance)
+plt.title('Top 10 Feature Importances')
+plt.show()
+```
+
+## 🔐 Data Privacy & Ethics
+
+### Best Practices
+- Anonymize personal identifiable information (PII)
+- Respect data usage agreements
+- Consider bias in datasets and models
+- Document data sources and transformations
+- Ensure reproducibility
+
+### Ethical Considerations
+- Avoid discriminatory features (race, gender, etc.)
+- Validate model fairness across groups
+- Consider societal impact of predictions
+- Maintain transparency in model decisions
+- Regular bias audits
+
+## 💾 Saving & Loading Models
+
+### Model Persistence
+```python
+import pickle
+import joblib
+
+# Using pickle
+with open('model.pkl', 'wb') as f:
+    pickle.dump(model, f)
+
+# Load model
+with open('model.pkl', 'rb') as f:
+    loaded_model = pickle.load(f)
+
+# Using joblib (recommended for large models)
+joblib.dump(model, 'model.joblib')
+loaded_model = joblib.load('model.joblib')
+```
+
+### Saving Preprocessors
+```python
+# Save scaler
+joblib.dump(scaler, 'scaler.joblib')
+
+# Save label encoder
+joblib.dump(label_encoder, 'label_encoder.joblib')
+
+# Complete pipeline
+joblib.dump(pipeline, 'complete_pipeline.joblib')
+```
+
+## 🗂️ Directory Organization Tips
+
+```
+project/
+│
+├── data/
+│   ├── raw/              # Original, immutable data
+│   ├── processed/        # Cleaned, transformed data
+│   └── external/         # Third-party data
+│
+├── notebooks/            # Jupyter notebooks
+│   ├── 01_exploration.ipynb
+│   ├── 02_preprocessing.ipynb
+│   └── 03_modeling.ipynb
+│
+├── src/                  # Source code
+│   ├── data/            # Data loading and processing
+│   ├── features/        # Feature engineering
+│   ├── models/          # Model training and prediction
+│   └── visualization/   # Plotting functions
+│
+├── models/              # Trained models
+├── reports/             # Analysis reports
+├── requirements.txt     # Dependencies
+└── README.md           # Project documentation
+```
 
 ## 📧 Course Information
 **Course Code**: CIS31041  
