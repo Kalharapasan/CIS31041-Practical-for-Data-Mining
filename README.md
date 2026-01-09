@@ -578,10 +578,208 @@ df['encoded_column'] = le.fit_transform(df['category_column'])
 ## 📚 Resources
 
 ### Documentation Files
-- `Notes.txt`, `text.txt`: Various course notes
-- `Function Explanation.txt`: Python function explanations
-- `ReadMe.txt`: Specific instructions for assignments
-- `Q.txt`: Question files
+- `Notes.txt`, `text.txt`: Various course notes and summaries
+- `Function Explanation.txt`: Python function explanations and examples
+- `ReadMe.txt`: Specific instructions for assignments and exercises
+- `Q.txt`: Question files with problem statements
+
+### Official Documentation Links
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
+- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+- [Seaborn Documentation](https://seaborn.pydata.org/)
+- [MLxtend Documentation](http://rasbt.github.io/mlxtend/)
+
+### Recommended Reading
+- Python for Data Analysis by Wes McKinney
+- Hands-On Machine Learning with Scikit-Learn by Aurélien Géron
+- Introduction to Data Mining by Tan, Steinbach & Kumar
+
+### Useful Websites
+- [Kaggle](https://www.kaggle.com/) - Datasets and competitions
+- [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/)
+- [Towards Data Science](https://towardsdatascience.com/) - Tutorials and articles
+
+## 🔑 Quick Reference Guide
+
+### Pandas Cheat Sheet
+```python
+# Data Selection
+df.loc[row_label, column_label]  # By label
+df.iloc[row_index, column_index]  # By position
+df['column']                       # Single column
+df[['col1', 'col2']]              # Multiple columns
+
+# Filtering
+df[df['age'] > 30]                # Boolean indexing
+df.query('age > 30 and city == "NYC"')  # Query syntax
+
+# Grouping
+df.groupby('category').mean()     # Group by and aggregate
+df.pivot_table(values='sales', index='month', columns='year', aggfunc='sum')
+
+# Sorting
+df.sort_values('column', ascending=False)
+df.sort_index()
+```
+
+### Scikit-learn Model Selection
+```python
+# Regression
+from sklearn.linear_model import LinearRegression, Ridge, Lasso
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+
+# Classification
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
+
+# Clustering
+from sklearn.cluster import KMeans, DBSCAN, AgglomerativeClustering
+```
+
+### Common Evaluation Metrics
+```python
+from sklearn.metrics import (
+    accuracy_score,
+    precision_score,
+    recall_score,
+    f1_score,
+    confusion_matrix,
+    classification_report,
+    mean_squared_error,
+    r2_score
+)
+
+# Classification
+accuracy = accuracy_score(y_true, y_pred)
+precision = precision_score(y_true, y_pred, average='weighted')
+recall = recall_score(y_true, y_pred, average='weighted')
+f1 = f1_score(y_true, y_pred, average='weighted')
+
+# Regression
+mse = mean_squared_error(y_true, y_pred)
+rmse = mean_squared_error(y_true, y_pred, squared=False)
+r2 = r2_score(y_true, y_pred)
+```
+
+## 🎯 Exam Preparation Tips
+
+### Past Exam Analysis (2019)
+- **Q01**: Employee dataset analysis
+  - Data preprocessing
+  - Handling categorical variables
+  - Classification tasks
+  
+- **Q02-Q04**: Various data mining scenarios
+  - Association rule mining
+  - Clustering analysis
+  - Model evaluation
+
+### Key Skills to Master
+1. **Data Preprocessing** (30% of exam)
+   - Missing value handling
+   - Encoding techniques
+   - Feature scaling
+   
+2. **Model Implementation** (40% of exam)
+   - Classification algorithms
+   - Clustering methods
+   - Association rules
+   
+3. **Evaluation & Interpretation** (30% of exam)
+   - Performance metrics
+   - Result visualization
+   - Model comparison
+
+### Time Management
+- Read all questions first (5 minutes)
+- Allocate time based on marks
+- Leave time for review (10-15 minutes)
+- Complete easier questions first
+
+### Common Exam Patterns
+- Load and explore dataset
+- Handle missing values
+- Encode categorical features
+- Build and train model
+- Evaluate performance
+- Interpret results
+
+## 🚦 Project Workflow
+
+### 1. Problem Understanding
+- Define business objective
+- Identify target variable
+- Understand constraints
+
+### 2. Data Collection & Exploration
+```python
+# Load data
+df = pd.read_csv('dataset.csv')
+
+# Initial exploration
+print(df.head())
+print(df.info())
+print(df.describe())
+```
+
+### 3. Data Preprocessing
+```python
+# Handle missing values
+df = df.fillna(df.mean())
+
+# Encode categorical variables
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+df['category_encoded'] = le.fit_transform(df['category'])
+
+# Scale features
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+```
+
+### 4. Feature Engineering
+- Create new features
+- Select important features
+- Reduce dimensionality if needed
+
+### 5. Model Selection & Training
+```python
+# Split data
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+
+# Train model
+from sklearn.tree import DecisionTreeClassifier
+model = DecisionTreeClassifier()
+model.fit(X_train, y_train)
+```
+
+### 6. Model Evaluation
+```python
+# Make predictions
+y_pred = model.predict(X_test)
+
+# Evaluate
+from sklearn.metrics import accuracy_score, classification_report
+print(f"Accuracy: {accuracy_score(y_test, y_pred):.2f}")
+print(classification_report(y_test, y_pred))
+```
+
+### 7. Model Optimization
+- Hyperparameter tuning
+- Cross-validation
+- Ensemble methods
+
+### 8. Deployment & Documentation
+- Save trained model
+- Document findings
+- Create visualizations
 
 ## 🎯 Learning Objectives
 
